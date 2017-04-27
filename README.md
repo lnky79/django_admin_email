@@ -1,8 +1,20 @@
 # django_admin_email
 
-分离出django关于邮件的app, 包含：
+## Abstract
 
-1. 对异步邮件任务队列做支持， 基于celery
-2. 对django admin中的email模板配置，backend邮箱配置，
-    email发送历史记录做了支持
+The django app uses in Email admin, including:
+
+1. Support for asynchronous mail task queues based on celery
+2. The email content template configuration for django admin( template data rendering you should set varaible by yourself)
+3. Backend mailbox configuration
+4. Email send history
+
     
+## Install
+
+`pip install -r requirements.txt -i https://pypi.douban.com/simple`
+
+
+## Usage
+
+- add it to settings.py app config
